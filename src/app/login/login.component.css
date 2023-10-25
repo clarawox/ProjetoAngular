@@ -1,0 +1,63 @@
+/*Pedido*/
+.cadastro{
+    background-color:#ffe7cb;
+    /* height: 600px; */
+}
+
+
+.titulo_cadastro{
+    font-size: 2.5em;           
+    font-weight: bold;
+    padding: 20px 0 0 20px;
+    color: #8C455F;
+}
+
+.contato_texto{
+    font-size: 1em;
+    text-align: center;
+    padding: 0 0 2% 0;
+}
+
+.input-padrao{
+    display: block;
+    padding: 10px 40px;
+    width: 100%;
+}
+
+button{
+    width: 20%;
+    padding: 15px 10px;
+    background: #8C455F;
+    color: #F2D7B6;
+    font-weight: bold;
+    border-radius: 5px;
+    font-size: 1em;
+    text-align: center;
+    align-items: center;
+}
+
+hr{
+    border-top: 2px solid  #8C455F;
+  }
+
+#formulario{
+    max-width: 800px;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px #8C455F;
+}
+
+p{
+    color: #59473C;
+    font: 20px arial;
+    margin: 0 0 16px;
+}
+
+.apres{
+    color:#59473C;
+    text-align: center;
+    font-size: 0.75em;           
+    margin: 0 0 1em;
+    clear: left;
+}

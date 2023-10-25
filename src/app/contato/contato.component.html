@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+    <script>
+        alert("Utiize esse formulário para se comunicar conosco! <3");
+
+        dia = new Array("Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado");
+        mes = new Array("janeiro", "fevereiro", "março", "abril", "maio", "junho", "julho", "agosto", "setembro", "outubro", "novembro", "dezembro");
+        data = new Date;
+
+    </script>
+</head>
+
+<div class="contato">
+    <br />
+    <p class="titulo_contato">CONTATO🍩</p>
+    <p style="text-align: right; margin-right: 10px; font-size: 1em;">
+        <script type="text/javascript">
+            document.write(dia[data.getDay()] + ", " + data.getDay() + " de " + mes[data.getMonth()] + " de " + data.getFullYear());
+        </script>
+    </p>
+    <section class="apres">
+        <h2 class="desc"> O atendimento funciona de segunda à sexta, das 9hrs as 18hrs |
+            <a class="whatsapp-link" href="https://wa.me/5599111112222" target="_blank"><i
+                    class="fa fa-whatsapp"></i></a> (11) 4444-8888 <br>
+            Qual o motivo do seu contato conosco?
+        </h2>
+    </section>
+    <div id="formulario">
+        <form name="frm_contato" method="get" action="mailto:teste@mail.com" target="_blank">
+            <fieldset>
+                <legend>Dados Pessoais:</legend>
+                <label for="nomesobrenome">* Nome e sobrenome:</label>
+                <input type="text" id="nomesobrenome" name="" class="input-padrao" required>
+
+                <label for="email">* Email:</label>
+                <input type="email" id="email" name="" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+                <label for="telefone">Telefone:</label>
+                <input type="tel" id="telefone" name="" class="input-padrao" placeholder="(XX)XXXXX-XXXX">
+
+                <label for="mensagem">* Mensagem:</label>
+                <textarea cols="70" rows="10" id="mensagem" name="" class="input-padrao" required></textarea>
+
+                <label for="contato">Como prefere o nosso contato?
+                    <input type="radio" value="radio-mail" name="Contato"> E-mail
+                    <input type="radio" value="radio-telefone" name="Contato"> Telefone
+                    <input type="radio" value="radio-whatsapp" name="Contato"> WhatsApp
+                </label>
+
+                <br>
+                <label for="horario">Qual o motivo do seu contato?
+                    <select>
+                        <option>Selecione</option>
+                        <option>Dúvida</option>
+                        <option>Elogio</option>
+                        <option>Sugestão</option>
+                        <option>Reclamação</option>
+                    </select>
+                </label>
+                <br>
+            </fieldset>
+
+            <label><input type="checkbox" class="chk"> Gostaria de receber nossas novidade?</label>
+            <div class="botao">
+                <input type="submit" value="Enviar formulário" class="Enviar"
+                    onclick="alert('Formulário enviado com sucesso!')">
+            </div>
+        </form>
+    </div>
+</div>
+<footer></footer>

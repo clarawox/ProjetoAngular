@@ -1,0 +1,69 @@
+<br>
+<h2 class="titulo_principal">PEDIDO🍩</h2>
+<section class="apres">
+    <h2>Faça seu pedido!<br></h2>
+</section>
+
+<div id="formulario">
+    <form class="row g-3" method="get">
+        <div class="col-md-6">
+            <label id="" class="form-label">Nome</label>
+            <input #nome type="text" class="form-control">
+        </div>
+
+        <div class="col-md-6">
+            <label class="form-label">Email</label>
+            <input #email type="text" class="form-control" id="email">
+        </div>
+    </form>
+
+    <br/>
+
+    <label> Escolha um produto:</label>
+    <select [(ngModel)]="select1" (change)="onChange()" class="col-md-12">
+        <option *ngFor="let p of produtos" [value]="p.id">
+            {{p.tipo}}
+        </option>
+    </select>
+
+    <br/>
+    <br/>
+
+    <label> Escolha seu sabor favorito:</label>
+    <select [(ngModel)]="select2" class="rounded-input20 select-select col-md-12">
+        <option *ngFor="let c of sabores" [value]="c">
+            {{c}}
+        </option>
+    </select>
+    <br/>
+    <br/>
+
+    <form class="row g-3" method="get">
+        <div class="col-12">
+            <label [(ngModel)]="endIn" class="form-label">Endereço: </label>
+            <input #end type="text" class="form-control" placeholder="Rua x, 123" id="end">
+        </div>
+
+        <div class="col-12">
+            <label class="form-label">Observações: </label>
+            <input #obs type="text" class="form-control" placeholder="Ex: sem cebola, mandar ketchup, etc" id="obs">
+        </div>
+    </form>
+    <br/>
+    <div class="col-12">
+        <button (click)="clickbutton()">Enviar</button>
+    </div>
+</div>
+
+<section class="apres">
+    <h2>🍩Seu pedido:<br></h2>
+</section>
+
+<div id="formulario">
+    <p> Seu nome: {{nome.value}}</p>
+    <p> Seu email: {{email.value}}</p>
+    <p> Produto escolhido: {{produto}}</p>
+    <p> Sabor escolhido: {{sabor}}</p>
+    <p> Seu endereço: {{end.value}}</p>
+    <p> Observações: {{obs.value}}</p>
+</div>

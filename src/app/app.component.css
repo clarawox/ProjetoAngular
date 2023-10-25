@@ -1,0 +1,55 @@
+/*Estilização da sessão HEADER da página*/
+header{
+    background: #F2D7B6;
+    padding: 5px 0;
+}
+/*Estilização da sessão nav da página*/
+
+main{
+    background-color: #ffe7cb;
+    margin-top: -40px;
+    font-family:  "Arial";
+    color: #59473C;
+    font-weight: bold;
+}
+
+nav{                                    /*nav geral, estilização geral da aba*/
+    position: absolute;
+    top: 50px;                         /*distancia em relação ao topo da página*/
+    right:0;                            /*distanciamento da margem direita*/
+}
+nav li {
+    display: inline;                    /*coloca o itens um do lado do outro*/
+    right: 0 10 0 15px;
+}
+nav ul {
+    margin-left: 150px;
+}
+
+nav a {                                 /*Quando não possui ponto na frente significa que é um elemento, esse nav estiliza o link*/
+    text-transform:  uppercase;         /*coloca os itens em caixa alta*/
+    color: #59473C;
+    font-weight: bold;
+    font-size: 25px;
+    text-decoration: none;
+}
+nav a:hover{                            /*configurações para quando colocamos o mouse em cima dos itens de nav*/
+    color: #8C455F;
+    text-decoration: underline;
+}
+
+/*Estilização das listas da página*/
+ul{                                          /*itens de menu*/
+    list-style: none;                        /*remove as bolinhas da lista*/
+}
+
+/*Estilização  do logotipo*/
+.logo_caixa{
+    width: 95%;                           /*altera o tamanho do logo*/
+    position: relative;
+    margin: auto;
+}
+.logo{                                       /*o ponto final no inicio indica que aquilo é uma classe e não um elemento*/
+    width: 25%;
+    margin: 0;
+}

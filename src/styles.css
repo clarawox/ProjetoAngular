@@ -1,0 +1,60 @@
+/*Estilização do corpo da Página*/
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    line-height: 1;
+    font-family:  "Arial";
+    background-color: #F2D7B6;
+}
+/*Estilização da sessão HEADER da página*/
+header{
+    background: #F2D7B6;
+    padding: 5px 0;
+}
+/*Estilização da sessão nav da página*/
+
+main{
+    background-color: #F2D7B6;
+    margin-top: -40px;
+    font-family:  "Arial";
+    color: #59473C;
+}
+
+.titulo_principal{
+    text-align: center;
+    font-size: 50px;           /*dobro da fonte padrão*/
+    margin: 0 0 1em;
+    font-weight: bold;
+    clear: left;
+    color: #8C455F;
+}
+
+.principal{
+    font-size: 1.25em; 
+    width: 940px;
+    margin: 0 auto;
+    padding: 3em 0;
+    text-align: justify;
+}
+
+.principal strong {
+    font-weight: bold;
+    color: #8C455F;
+}
+
+.principal em{
+    font-style: italic;
+}
+
+.apres{
+    color:#59473C;
+    text-align: center;
+    font-size: 0.75em;           
+    margin: 0 0 1em;
+    clear: left;
+}

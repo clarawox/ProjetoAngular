@@ -1,0 +1,45 @@
+<div class="cadastro">
+    <p class="titulo_cadastro">Cadastre-se🍩</p>
+    <section class="apres">
+        <h2 class="desc">Cadastre-se conosco para receber mais informações via e-mail.</h2>
+    </section>
+
+    <div id="formulario">
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label id="" class="form-label">Nome:</label>
+                <input [(ngModel)]="vFirstName" [ngModelOptions]="{standalone: true}" class="form-control">
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Sobrenome:</label>
+                <input [(ngModel)]="vLastName" [ngModelOptions]="{standalone: true}" class="form-control">
+            </div>
+        </form>
+
+        <br />
+
+        <form class="row g-3">
+            <div class="col-md-6">
+                <label id="" class="form-label">Email:</label>
+                <input [(ngModel)]="vEmail" [ngModelOptions]="{standalone: true}" class="form-control">
+            </div>
+
+            <div class="col-md-6">
+                <label class="form-label">Senha:</label>
+                <input [(ngModel)]="vSenha" [ngModelOptions]="{standalone: true}" class="form-control" >
+            </div>
+        </form>
+        <br />
+        <div class="col-12">
+            <button (click)="chamadaBackPost()">Enviar</button>
+        </div>
+    </div>
+
+    <div *ngIf="(clientResult)"  id="formulario">
+        <p> Você confirma as seguintes informações: </p>
+        <p> Email: {{clientResult.email}}</p>
+        <p> Senha: {{clientResult.senha}}</p>
+        <p> Nome: {{clientResult.first_name}} {{clientResult.last_name}}</p>
+    </div>
+</div>
